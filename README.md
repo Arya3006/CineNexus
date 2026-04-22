@@ -6,23 +6,23 @@ A full-stack movie ticket booking web application with real-time seat selection 
 
 ## 🚀 Features
 
-- 🎬 Browse movies using TMDB API  
-- 🪑 Real-time seat selection system  
-- 💳 Secure Razorpay payment integration  
-- 🧑‍💼 Admin dashboard to manage shows  
-- 📋 Booking management system  
-- 🔐 User authentication using Clerk  
+* 🎬 Browse movies using TMDB API
+* 🪑 Real-time seat selection system
+* 💳 Secure Razorpay payment integration
+* 🧑‍💼 Admin dashboard to manage shows
+* 📋 Booking management system
+* 🔐 User authentication using Clerk
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React (Vite), Tailwind CSS  
-- **Backend:** Node.js, Express  
-- **Database:** MongoDB Atlas  
-- **Authentication:** Clerk  
-- **API:** TMDB (The Movie Database)  
-- **Payment:** Razorpay  
+* **Frontend:** React (Vite), Tailwind CSS
+* **Backend:** Node.js, Express
+* **Database:** MongoDB Atlas
+* **Authentication:** Clerk
+* **API:** TMDB (The Movie Database)
+* **Payment:** Razorpay
 
 ---
 
@@ -34,6 +34,7 @@ A full-stack movie ticket booking web application with real-time seat selection 
 cd backend
 npm install
 npm start
+```
 
 ### 🔹 Frontend
 
@@ -41,3 +42,7 @@ npm start
 cd frontend/client
 npm install
 npm run dev
+```
+
+Frontend runs on: http://localhost:5173
+Backend runs on: http://localhost:5000
