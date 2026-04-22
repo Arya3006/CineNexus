@@ -34,3 +34,10 @@ A full-stack movie ticket booking web application with real-time seat selection 
 cd backend
 npm install
 npm start
+
+### 🔹 Frontend
+
+```bash
+cd frontend/client
+npm install
+npm run dev
