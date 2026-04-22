@@ -1,9 +1,3 @@
-<div align="center">
-
-# QuickShow 🎬🍿🎥
-</div>
-
-
-
-
-
+cd frontend/client
+npm install
+npm run dev
