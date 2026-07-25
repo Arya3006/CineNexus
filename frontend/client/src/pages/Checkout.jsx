@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { useUser } from "@clerk/clerk-react";
 
 const Checkout = () => {
+  const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
   const { user } = useUser();
   const location = useLocation();
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const Checkout = () => {
       }
 
       const orderRes = await fetch(
-        "http://localhost:5000/booking/create-order",
+        `${API_URL}/booking/create-order`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -61,7 +62,7 @@ const Checkout = () => {
 
         handler: async function () {
           try {
-            const res = await fetch("http://localhost:5000/booking/", {
+            const res = await fetch(`${API_URL}/booking/`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
