@@ -22,9 +22,10 @@ app.use("/shows", showRouter);
 
 mongoose
   .connect(process.env.MONGO_URL)
-  .then(() =>
-    app.listen(5000, () =>
-      console.log("Connected To Database And Server is running")
-    )
-  )
+  .then(() => {
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () =>
+      console.log(`Connected To Database And Server is running on port ${PORT}`)
+    );
+  })
   .catch((e) => console.log(e));
